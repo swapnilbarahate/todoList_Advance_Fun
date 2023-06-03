@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_Todo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container ">
+        <h1>Task List</h1>
+        <div class="table1_container">
+            <table id="table1" class="table1">
+                <tr>
+                    <th id="sortDateAse"  onclick="sortData(this.id)">Date &#8657;</span></th>
+                    <th id="sortTaskAse" onclick="sortData(this.id)">Task</th>
+                    <th>Description</th>
+                    <th><input type="search" onkeyup="search(this.value)" name="search" placeholder="&#x1F50E;   Search" id="search"></th>
+                <tr>
+                <tr class="sticky-row">
+                    <td><input type="date" name="date" id="date"></td>
+                    <td><input type="text" placeholder="Enter Task Name" id="taskName"></td>
+                    <td><input type="text" placeholder="Enter Task Description" id="taskDesc"></td>
+                    <td><button id="saveData" class="btn btn-add" onclick="addTask(this)">ADD</button></td>
+                <tr>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
